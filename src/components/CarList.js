@@ -23,7 +23,6 @@ function CarList(){
             </ul>
         </main>
     )
-
 }
 
 export default CarList
