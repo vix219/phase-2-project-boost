@@ -6,6 +6,8 @@ import './index.css';
 import App from './components/App';
 import CarList from "./components/CarList";
 import NewCar from './components/NewCar'; 
+import CarCard from "./components/CarCard";
+
 
 const router = createBrowserRouter([
   {
