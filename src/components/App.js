@@ -1,6 +1,6 @@
 import React, { useEffect,useState } from "react";
-import CarList from "./CarList";
-import '../App.css';
+import { Outlet } from "react-router-dom";
+import NavBar from "./NavBar";
 
 
 function App(){
@@ -8,16 +8,19 @@ function App(){
 const[cars, setCars]= useState([])
 
 useEffect(() => {
-    fetch("")
+    fetch("http://localhost:5001/Cars")
     .then((response) => response.json())
     .then((car)=>setCars(car))
 },[])
 
     return (
-        <div className="app">
-            <CarList cars={cars} />
-        </div>
+        <>
+        <header>
+            <NavBar />
+        </header>
+        <Outlet context={cars}/>
+       
+        </>
     )
 }
-
 export default App;
