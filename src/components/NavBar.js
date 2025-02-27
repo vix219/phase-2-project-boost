@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+
 
 
 function NavBar() {
   return (
     <>
-    <nav>
+    <nav className="nav-container">
       <NavLink
         to="/"
         className="nav-link"
@@ -13,7 +13,7 @@ function NavBar() {
         Home
       </NavLink>
     </nav>
-    <nav>
+    <nav className="nav-container">
     <NavLink
       to="/NewCar"
       className="nav-link"
