@@ -1,5 +1,7 @@
 import React, { useEffect,useState } from "react";
-import CarList from "./CarList";
+import { Outlet } from "react-router-dom";
+import NavBar from "./NavBar";
+
 
 function App(){
 
@@ -12,9 +14,13 @@ useEffect(() => {
 },[])
 
     return (
-        <div className="app">
-            <CarList cars={cars} />
-        </div>
+        <>
+        <header>
+            <NavBar />
+        </header>
+        <Outlet context={cars}/>
+       
+        </>
     )
 }
 

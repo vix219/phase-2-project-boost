@@ -1,12 +1,25 @@
 import React from "react";
-import CarCard from "./CarCard";
+import { useOutletContext } from "react-router-dom";
 
-function CarList({cars}){
-
+function CarList(){
+    const cars = useOutletContext();
+   
     return(
         <main>
-            <ul classname="cards">
-                {cars.map((car)=> <CarCard car={car}/>)}
+            <ul className="cards">
+        {cars.map((car) => {
+            return(
+            <li key={car.id} className="card">
+             <div>
+                <img className="image" src={car.image} alt={"description"} />
+                <ul>{car.name}</ul>
+                <ul>{car.year}</ul>
+                <ul>{car.type}</ul>
+                <ul>{car.color}</ul>
+                <ul>{car.fuel_type}</ul>
+            </div>
+            </li>)
+         })}
             </ul>
         </main>
     )
