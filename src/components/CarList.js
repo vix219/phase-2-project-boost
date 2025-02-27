@@ -13,4 +13,4 @@ function CarList({cars}){
 
 }
 
-export default CarCars
+export default CarList
