@@ -6,17 +6,17 @@ function CarList(){
    
     return(
         <main>
-            <ul className="cards">
+            <ul className="car-listing">
         {cars.map((car) => {
             return(
-            <li key={car.id} className="card">
+            <li key={car.id} className="car-card">
              <div>
-                <img className="image" src={car.image} alt={"description"} />
-                <ul>{car.name}</ul>
-                <ul>{car.year}</ul>
-                <ul>{car.type}</ul>
-                <ul>{car.color}</ul>
-                <ul>{car.fuel_type}</ul>
+                <img className="car-card img" src={car.image} alt={"description"} />
+                <ul className="car-card h3">{car.name}</ul>
+                <ul className="car-card p">{car.year}</ul>
+                <ul className="car-card p">{car.type}</ul>
+                <ul className="car-card p">{car.color}</ul>
+                <ul className="car-card p">{car.fuel_type}</ul>
             </div>
             </li>)
          })}
