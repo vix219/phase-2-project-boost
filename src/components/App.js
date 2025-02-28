@@ -13,15 +13,21 @@ useEffect(() => {
     fetch("http://localhost:5001/Cars")
     .then((response) => response.json())
     .then((car)=>setCars(car))
+
 },[])
 
+
+function handleAddItem(newItem){
+    setCars(()=> [...cars, newItem])
+}
+
     return (
-    <body className="container">
+    <div className="container">
         <nav className="nav-container">
             <NavBar />
         </nav>
-        <Outlet context={cars}/>
-    </body>
+        <Outlet context={{cars: cars, handleAddItem: handleAddItem}}/>
+    </div>
        
     )
 }
