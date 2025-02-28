@@ -4,6 +4,7 @@ import CarCard from "./CarCard";
 
 function CarList(){
     const {cars} = useOutletContext();
+    console.log(cars)
     const CarList = cars.map((car) => <CarCard key={car.id} car={car}/>);
 
    
