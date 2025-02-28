@@ -6,6 +6,7 @@ function NewCar(){
    const {handleAddItem} = useOutletContext();
 
    
+   
    const[name, setname]=useState("")
    const[type, settype]=useState("")
    const[color, setcolor]=useState("")
@@ -31,7 +32,14 @@ function NewCar(){
          body: JSON.stringify(carData),
        })
       .then((r) => r.json())
-      .then((newItem) => handleAddItem(newItem));
+      .then((newItem) => {
+         handleAddItem(newItem); 
+         setname("");
+         settype("");
+         setcolor("");
+         setyear("");
+         setfueltype("");
+   });
    }
    
    

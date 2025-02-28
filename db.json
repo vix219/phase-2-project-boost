@@ -100,30 +100,12 @@
       "image": ""
     },
     {
-      "id": "1e00",
-      "year": "2001",
-      "color": "WHITE",
-      "name": "newNAME",
-      "fuel_type": "UU",
-      "type": "sedan",
-      "image": ""
-    },
-    {
-      "id": "a6d8",
-      "year": "2",
-      "color": "2",
-      "name": "another",
-      "fuel_type": "3",
-      "type": "2",
-      "image": ""
-    },
-    {
-      "id": "27c5",
-      "year": "1",
-      "color": "dd",
-      "name": "uu",
-      "fuel_type": "1",
-      "type": "ww",
+      "id": "d1db",
+      "year": "year",
+      "color": "color",
+      "name": "Yejo",
+      "fuel_type": "u",
+      "type": "is",
       "image": ""
     }
   ]
