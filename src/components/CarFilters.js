@@ -10,7 +10,8 @@ const CarFilters = () => {
 
   console.log(cars)
 
- function filterCars(e) {
+ function filterCars(event) {
+  event.preventDefault()
 
     let filtered = cars;
 
@@ -59,7 +60,7 @@ const CarFilters = () => {
             <option value="Diesel">Diesel</option>
           </select>
         </label>
-        {/* <button className="submit-btn" type="submit">Apply Filter</button> */}
+        <button className="submit-btn" type="submit">Apply Filter</button> 
       </form>
 
       <div>

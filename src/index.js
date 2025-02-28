@@ -6,9 +6,7 @@ import './index.css';
 import App from './components/App';
 import CarList from "./components/CarList";
 import NewCar from './components/NewCar'; 
-
 import CarFilters from './components/CarFilters';
-
 
 
 const router = createBrowserRouter([
@@ -23,10 +21,10 @@ const router = createBrowserRouter([
           {
               path: "/NewCar",
               element: <NewCar />
-          },
+          }, 
           {
-            path: "/CarFilters",  
-            element: <CarFilters />,  
+              path: "/CarFilters",
+              element: <CarFilters />
           }
           
       ]
@@ -37,3 +35,4 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<RouterProvider router={router} />);
+
