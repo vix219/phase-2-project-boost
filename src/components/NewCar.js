@@ -5,28 +5,32 @@ function NewCar(){
         < >
         <div className="form-container">
         <form  className="form">
-            <label>
-                Name
-                <input type="text" name="text" />
+            <label className="form-group label">
+                Name  :  
+                <input className="form-group input" type="text" name="text" />
              </label>
-             <label>
-                Type
-                <input type="text" name="text" />
+             <br></br>
+             <label className="form-group label">
+                Type  :
+                <input className="form-group input" type="text" name="text" />
              </label>
-             <label>
-                Color
-                <input type="text" name="text" />
+             <br></br>
+             <label className="form-group label">
+                Color  :
+                <input className="form-group input" type="text" name="text" />
+             </label >
+             <br></br>
+             <label className="form-group label">
+                Year  :
+                <input className="form-group input" type="text" name="text" />
              </label>
-             <label>
-                Year
-                <input type="text" name="text" />
+             <br></br>
+             <label className="form-group label">
+                FuelType  :
+                <input className="form-group input" type="text" name="text" />
              </label>
-             <label>
-                FuelType
-                <input type="text" name="text" />
-             </label>
-      
-        <input type="submit" value="submit" />
+             <br></br>
+        <input className="submit-btn" type="submit" value="submit" />
         </form>
         </div>
     </>
