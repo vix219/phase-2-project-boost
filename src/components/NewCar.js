@@ -2,8 +2,9 @@ import React from "react";
 
 function NewCar(){
     return (
-        <>
-        <form  className="new-car-form">
+        < >
+        <div className="form-container">
+        <form  className="form">
             <label>
                 Name
                 <input type="text" name="text" />
@@ -27,6 +28,7 @@ function NewCar(){
       
         <input type="submit" value="submit" />
         </form>
+        </div>
     </>
     )
 }

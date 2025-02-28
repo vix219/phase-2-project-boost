@@ -1,45 +1,8 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Import Google Font */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* App.css */
-
-/* Global Reset */
 *,
 *::before,
 *::after {
@@ -48,9 +11,43 @@
   box-sizing: border-box;
 }
 
+
+
+/* HomePage Container */
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;  /* Full viewport height */
+  background-color: #f4f4f4;  /* Light background */
+  margin: 0;
+}
+
+/* Logo Style */
+.logo {
+  font-family: 'Tomorrow', static; /* Bold modern font */
+  font-size: 4rem; /* Large font size */
+  font-weight: 700; /* Make it bold */
+  color: #333; /* Dark color for the text */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 2px; /* Add some spacing between letters */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.logo:hover {
+  color: #8c102d; /* Accent color on hover */
+  transform: scale(1.1); /* Slight scale up effect */
+  text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+
+
+
 /* Body Styling */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Tomorrow', static;
   background-color: #f4f4f9;  /* Light background */
   color: #333;  /* Dark text */
   line-height: 1.6;
@@ -107,7 +104,7 @@ nav .logo {
 }
 
 nav .logo:hover {
-  color: #ff6f61; /* Accent color on hover */
+  color: #8c102d; /* Accent color on hover */
 }
 
 /* Navigation Links */
@@ -124,7 +121,7 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -321,6 +318,7 @@ nav .dropdown-menu a:hover {
   color: #ff6f61;
 }
 
+
 /* Mobile View */
 @media (max-width: 768px) {
   .car-listing {
@@ -345,6 +343,85 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* FormComponent.css */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f4f7fa;
+}
+
+.form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 9px 1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 200px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 500%;
+  padding: 20px;
+  font-size: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #004085;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+
 
 /* Media Queries */
 @media (max-width: 768px) {

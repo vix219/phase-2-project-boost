@@ -2,6 +2,7 @@ import React, { useEffect,useState } from "react";
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 import '../App.css';  
+import HomePage from "./HomePage";
 
 
 
@@ -17,6 +18,7 @@ useEffect(() => {
 
     return (
     <body className="container">
+        <HomePage/>
         <nav className="nav-container">
             <NavBar />
         </nav>

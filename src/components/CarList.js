@@ -4,6 +4,12 @@ import { useOutletContext } from "react-router-dom";
 function CarList(){
     const cars = useOutletContext();
    
+
+// add filter to CarList
+const carFilter = cars.filter(() => {
+
+})
+
     return(
         <main>
             <ul className="car-listing">
@@ -26,3 +32,4 @@ function CarList(){
 }
 
 export default CarList
+

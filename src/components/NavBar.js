@@ -2,9 +2,13 @@ import { NavLink } from "react-router-dom";
 
 
 
+
 function NavBar() {
   return (
     <>
+    <div className="nav-container">
+     
+    
     <nav className="nav-container">
       <NavLink
         to="/"
@@ -21,6 +25,7 @@ function NavBar() {
       Customize Your Own Car
     </NavLink>
     </nav>
+    </div>
   </>
   );
 };
