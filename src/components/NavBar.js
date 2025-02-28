@@ -22,12 +22,12 @@ function NavBar() {
     </NavLink>
     </nav>
     <nav className="nav-container">
-      <NavLink
-        to="/CarFilters"
-        className="nav-link"
-      >
-        CarFilters
-      </NavLink>
+    <NavLink
+      to="/CarFilters"
+      className="nav-link"
+    >
+      Car Filter
+    </NavLink>
     </nav>
   </>
   );
