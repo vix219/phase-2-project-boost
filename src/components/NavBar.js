@@ -21,6 +21,14 @@ function NavBar() {
       Customize Your Own Car
     </NavLink>
     </nav>
+    <nav className="nav-container">
+      <NavLink
+        to="/CarFilters"
+        className="nav-link"
+      >
+        CarFilters
+      </NavLink>
+    </nav>
   </>
   );
 };
