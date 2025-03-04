@@ -45,31 +45,33 @@ function NewCar(){
    
    
    return (
-        <>
-        <form onSubmit={handleSubmit} className="new-car-form">
-            <label>
-                Name
-                <input onChange={(e) => setname(e.target.value)} value={name} type="text" name="text" />
-             </label>
-             <label>
-                Type
-                <input onChange={(e) => settype(e.target.value)} value={type}type="text" name="text" />
-             </label>
-             <label>
-                Color
-                <input onChange={(e) => setcolor(e.target.value)} value={color} type="text" name="text" />
-             </label>
-             <label>
-                Year
-                <input onChange={(e) => setyear(e.target.value)} value={year} type="text" name="text" />
-             </label>
-             <label>
-                FuelType
-                <input onChange={(e) => setfueltype(e.target.value)} value={feultype} type="text" name="text" />
-             </label>
-      
-        <input type="submit" value="submit" />
-        </form>
+        <> <div  >
+            <form className="form-container" onSubmit={handleSubmit}>
+                  <h4 className="form-title" >Request Your Dream Car</h4>
+                  <label className="label">
+                     Name
+                     <input className="textarea" onChange={(e) => setname(e.target.value)} value={name} type="text" name="text" />
+                  </label>
+                  <label className="label" >
+                     Type
+                     <input className="textarea" onChange={(e) => settype(e.target.value)} value={type}type="text" name="text" />
+                  </label>
+                  <label className="label" >
+                     Color
+                     <input className="textarea" onChange={(e) => setcolor(e.target.value)} value={color} type="text" name="text" />
+                  </label>
+                  <label className="label" >
+                     Year
+                     <input className="textarea" onChange={(e) => setyear(e.target.value)} value={year} type="text" name="text" />
+                  </label>
+                  <label className="label" >
+                     FuelType
+                     <input className="textarea" onChange={(e) => setfueltype(e.target.value)} value={feultype} type="text" name="text" />
+                  </label>
+            
+            <input className="button" type="submit" value="submit" />
+            </form>
+        </div>
     </>
     )
 }
