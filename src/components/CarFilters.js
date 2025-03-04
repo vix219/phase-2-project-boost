@@ -37,11 +37,11 @@ const CarFilters = () => {
   
 
   return (
-    <div className="body">
-      <h1>Car Filter</h1>
+    <div className="form-container">
+      <h1 className="form-title">Car Filter</h1>
 
-      <form className="form" onSubmit={filterCars}>
-        <label>
+      <form className="form-container" onSubmit={filterCars}>
+        <label className="h2.form-title" >
           Car Type:
           <select value={carType} onChange={(e) => setCarType(e.target.value)}>
             <option value="All">All</option>
@@ -60,7 +60,7 @@ const CarFilters = () => {
             <option value="Diesel">Diesel</option>
           </select>
         </label>
-        <button className="submit-btn" type="submit">Apply Filter</button> 
+        <button className="button" type="submit">Apply Filter</button> 
       </form>
 
       <div>

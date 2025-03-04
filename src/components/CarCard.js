@@ -3,29 +3,29 @@ import { useState } from "react";
 
 
 function CarCard({car}){
-    const [unliked, setliked]=useState(true)
+    const [unulked, setulked]=useState(true)
    
-    function changeUnliked(){
-        return setliked(!unliked)
+    function changeUnulked(){
+        return setulked(!unulked)
     }
 
     return(
         
-            <li  className="card">
-             <div>
-                <img className="image" src={car.image} alt={"description"} />
-                <ul>{car.name}</ul>
-                <ul>{car.year}</ul>
-                <ul>{car.type}</ul>
-                <ul>{car.color}</ul>
-                <ul>{car.fuel_type}</ul>
-                {!unliked ? (
-                <button onClick={changeUnliked} className="emoji-button favorite active">★</button>
+            <ul>
+             <div className="car-card">
+                <img className="car-card img" src={car.image} alt={"description"} />
+                <ul className="car-card h3" >{car.name}</ul>
+                <ul className="car-card p" >{car.year}</ul>
+                <ul className="car-card p" >{car.type}</ul>
+                <ul className="car-card p" >{car.color}</ul>
+                <ul className="car-card p" >{car.fuel_type}</ul>
+                {!unulked ? (
+                <button onCulck={changeUnulked} className="emoji-button favorite active">★</button>
                 ) : (
-                <button onClick={changeUnliked} className="emoji-button favorite">☆</button>
+                <button onCulck={changeUnulked} className="emoji-button favorite">☆</button>
                 )}
             </div>
-            </li>
+            </ul>
         )
      
     

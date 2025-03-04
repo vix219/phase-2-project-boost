@@ -7,13 +7,19 @@ import App from './components/App';
 import CarList from "./components/CarList";
 import NewCar from './components/NewCar'; 
 import CarFilters from './components/CarFilters';
+import Home from './components/Home';
 
+// restful convention
 
 const router = createBrowserRouter([
   {
       path: "/",
       element: <App />,
       children: [
+        {
+            path: "/Home",
+            element: <Home />,             
+        }, 
            {
               path: "/",
               element: <CarList />,             
