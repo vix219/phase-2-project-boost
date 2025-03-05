@@ -55,6 +55,11 @@ body {
   color: #333;  
   line-height: 1.6;
 }
+.logo {
+  width: 100%;  /* Responsive size */
+  max-width: auto;  /* Max size for large screens */
+  height: auto;
+}
 
 .logo-text {
   font-family: 'Poppins', sans-serif;
