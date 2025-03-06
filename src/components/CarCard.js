@@ -3,10 +3,10 @@ import { useState } from "react";
 
 
 function CarCard({car}){
-    const [unulked, setulked]=useState(true)
+    const [unliked, setUnliked]=useState(true)
    
-    function changeUnulked(){
-        return setulked(!unulked)
+    function changeUnliked(){
+        return setUnliked(!unliked)
     }
 
     return(
@@ -19,10 +19,10 @@ function CarCard({car}){
                 <ul className="car-card p" >{car.type}</ul>
                 <ul className="car-card p" >{car.color}</ul>
                 <ul className="car-card p" >{car.fuel_type}</ul>
-                {!unulked ? (
-                <button onCulck={changeUnulked} className="emoji-button favorite active">★</button>
+                {!unliked ? (
+                <button onClick={changeUnliked} className="emoji-button favorite active">★</button>
                 ) : (
-                <button onCulck={changeUnulked} className="emoji-button favorite">☆</button>
+                <button onClick={changeUnliked} className="emoji-button favorite">☆</button>
                 )}
             </div>
             </ul>
