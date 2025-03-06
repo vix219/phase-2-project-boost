@@ -125,6 +125,15 @@
       "fuel_type": "",
       "type": "",
       "image": ""
+    },
+    {
+      "id": "7de2",
+      "year": "2025",
+      "color": "green",
+      "name": "nissan",
+      "fuel_type": "hybrid",
+      "type": "suv",
+      "image": ""
     }
   ]
 }

@@ -6,8 +6,6 @@ import logo from "../images/logo.png"
 const Home = () => {
   
   return (
-
-
     <div >
       <img className="logo" src={logo} ></img>
 

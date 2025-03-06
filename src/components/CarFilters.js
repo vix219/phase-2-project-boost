@@ -32,10 +32,6 @@ const CarFilters = () => {
     }
   };
 
- 
-
-  
-
   return (
     <div className="form-container">
       <h1 className="form-title">Car Filter</h1>
